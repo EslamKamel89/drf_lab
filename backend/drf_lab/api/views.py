@@ -6,4 +6,4 @@ from rest_framework.views import APIView
 
 class HomeView(APIView):
     def get(self, request: Request):
-        return Response({"message": "hello world"})
+        return Response({"query_params": request.query_params, "body": request.data})
