@@ -1,7 +1,7 @@
 import requests
 
-base_url = "http://127.0.0.1:8000/"
+base_url = "http://127.0.0.1:8000"
 
-response = requests.get(base_url)
-print(response.text)
+response = requests.get(f"{base_url}/api")
+print(response.json())
 print(response.status_code)
