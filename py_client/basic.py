@@ -4,9 +4,9 @@ base_url = "http://127.0.0.1:8000"
 
 response = requests.get(
     f"{base_url}/api",
-    params={"name": "Eslam", "age": 40},
-    data={"programming": "professional"},
-    json={"programming": "professional"},
+    # params={"name": "Eslam", "age": 40},
+    # data={"programming": "professional"},
+    # json={"programming": "professional"},
 )
-print(response.json())
+print(response.text)
 print(response.status_code)
